@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --section__border__size: 1px;
+    --section__margin__size: 0.5rem;
+    --section__padding__size: 2rem;
+    /* color scheme */
+    --text__main__color: black;
+    --background__body__color: lightgray;
+    --section__border__color: darkblue;
+    --section__background__color-solution: floralwhite;
+}
+body {
+    /* font */
+    font-family: Arial;
+    color: var(--text__main__color);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 14px;
+    /* self */
+    background-color: var(--background__body__color);
+    /* kids */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    /* self */
+    width: 100vw;
+    height: 100vh;
+    /* kids */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    /* self */
+    background-color: var(--section__background__color-solution);
+    border: var(--section__border__size) solid var(--section__border__color);
+    width: 800px;
+    height: 350px;
+    margin: var(--section__margin__size) 0;
+    padding: var(--section__padding__size);
+    /* kids */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px;
+    text-decoration: underline;
+}
+h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px;
+}

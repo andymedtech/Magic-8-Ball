@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrey Belomyttsev">
+    <meta name="description" content="Magic 8 Ball, Interstate 60">
+    <meta name="keywords" content="Magic, Ball, Interstate">
+    <!-- Favicon -->
+    <link rel="icon" href="./ico/favicon.ico">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <link rel="stylesheet" href="./css/magicBall.css">
+    <main>
+        <section class="#solution">
+            <h2>Magic 8 Ball</h2>
+            <div id="root_magicBall" class="magicBall">
+                <div class="magicBall_сircle_outer">
+                    <div id="root_magicBall_circle" class="magicBall_сircle_inner_white">
+                        <div id="root_magicBall_triangle" class="magicBall_triangle_off">
+                            <div class="magicBall_text">
+                                <p id="root_magicBall_message" class="magicBall_message_big">
+                                    8
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <h4>Enter a Question and Think about It</h4>
+                <input id="root_magicBall_question" placeholder="...or Think about the Question">
+                <button id="root_magicBall_button">Show Result</button>
+                <input id="root_magicBall_answer" disabled>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

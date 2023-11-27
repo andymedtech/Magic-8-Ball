@@ -1,0 +1,123 @@
+.magicBall {
+    display: grid;
+    grid-template-columns: 250px 450px;
+    grid-template-rows: 60px 60px 60px 60px;
+    column-gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+.magicBall input{
+    width: 420px;
+    height: 20px;
+    font-size: 14px;
+    background-color: ghostwhite;
+}
+.magicBall button{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    font-size: 12px;
+}
+.magicBall_сircle_outer {
+    /* self */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset -75px -75px 100px #1c1c1c, 10px 10px 20px #555555, inset 0px 0px 10px #1c1c1c;
+    margin: 5%;
+    grid-row: span 4;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_сircle_inner_white {
+    /* self */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 100px white, 0px 0px 0px white, inset 0px 0px 0px white;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_сircle_inner_blue {
+    /* self */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 100px blue, 10px 10px 20px #5555aa, inset 0px 0px 10px #1c1c1c;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_сircle_inner_green {
+    /* self */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 100px green, 10px 10px 20px #557755, inset 0px 0px 10px #1c1c1c;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_сircle_inner_yellow {
+    /* self */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 100px yellow, 10px 10px 20px #888855, inset 0px 0px 10px #1c1c1c;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_сircle_inner_red {
+    /* self */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 100px red, 10px 10px 20px #885555, inset 0px 0px 10px #1c1c1c;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_triangle_on {
+    /* self */
+    width: 0;
+    height: 0;
+    border-top: 80px solid rgba(38, 66, 143, 0.3); /* #26428f ; */
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.magicBall_triangle_off {
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.magicBall_text {
+    min-width: 80px;
+    min-height: 80px;
+    /* child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magicBall_message_big {
+    text-align: center;
+    font-size: 600%;
+}
+.magicBall_message_normal {
+    text-align: center;
+    font-size: 125%;
+}
