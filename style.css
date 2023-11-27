@@ -62,11 +62,25 @@ h4 {
     font-size: 18px;
     line-height: 18px;
     padding: 10px;
+    text-align: center;
 }
 
 @media (max-width: 700px) {
     section {
         width: 350px;
         height: 600px;
+    }
+}
+
+@media (max-width: 350px) {
+    section {
+        width: 250px;
+        height: 600px;
+    }
+}
+
+@media (orientation: portrait) {
+    main {
+        align-items: start;
     }
 }

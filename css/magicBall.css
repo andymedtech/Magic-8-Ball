@@ -133,7 +133,23 @@
         grid-template-columns: 350px;
         grid-template-rows: 250px 50px 50px 50px 100px;
     }
+    .magicBall_сircle_outer {
+        grid-row: span 1;
+    }
+}
 
+@media (max-width: 350px) {
+    .magicBall {
+        grid-template-columns: 250px;
+        grid-template-rows: 250px 50px 50px 50px 100px;
+    }
+    .magicBall input{
+        width: 240px;
+    }
+    .magicBall textarea {
+        width: 240px;
+        height: 40px;
+    }
     .magicBall_сircle_outer {
         grid-row: span 1;
     }
