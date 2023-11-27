@@ -1,13 +1,12 @@
 .magicBall {
     display: grid;
-    grid-template-columns: 250px 450px;
-    grid-template-rows: 60px 60px 60px 60px;
-    column-gap: 50px;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 60px 60px 60px 80px;
     justify-items: center;
     align-items: center;
 }
 .magicBall input{
-    width: 420px;
+    width: 320px;
     height: 20px;
     font-size: 14px;
     background-color: ghostwhite;
@@ -17,6 +16,13 @@
     height: 40px;
     padding: 5px;
     font-size: 12px;
+}
+.magicBall textarea {
+    background-color: ghostwhite;
+    width: 320px;
+    height: 40px;
+    font-size: 14px;
+    resize: none;
 }
 .magicBall_сircle_outer {
     /* self */
@@ -120,4 +126,15 @@
 .magicBall_message_normal {
     text-align: center;
     font-size: 125%;
+}
+
+@media (max-width: 700px) {
+    .magicBall {
+        grid-template-columns: 350px;
+        grid-template-rows: 250px 50px 50px 50px 100px;
+    }
+
+    .magicBall_сircle_outer {
+        grid-row: span 1;
+    }
 }

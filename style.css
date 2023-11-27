@@ -5,9 +5,8 @@
 }
 :root {
     --section__border__size: 1px;
-    --section__margin__size: 0.5rem;
-    --section__padding__size: 2rem;
-    /* color scheme */
+    --section__margin__size: 0;
+    --section__padding__size: 25px;
     --text__main__color: black;
     --background__body__color: lightgray;
     --section__border__color: darkblue;
@@ -34,7 +33,7 @@ main {
     height: 100vh;
     /* kids */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -42,10 +41,9 @@ section {
     /* self */
     background-color: var(--section__background__color-solution);
     border: var(--section__border__size) solid var(--section__border__color);
-    width: 800px;
-    height: 350px;
-    margin: var(--section__margin__size) 0;
-    padding: var(--section__padding__size);
+    width: 700px;
+    height: 370px;
+    padding: var(--section__padding__size) 0;
     /* kids */
     display: flex;
     flex-direction: column;
@@ -64,4 +62,11 @@ h4 {
     font-size: 18px;
     line-height: 18px;
     padding: 10px;
+}
+
+@media (max-width: 700px) {
+    section {
+        width: 350px;
+        height: 600px;
+    }
 }
